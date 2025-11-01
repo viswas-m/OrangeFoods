@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "name": "Paneer Butter Masala",
+    "description": "Rich tomato gravy cooked with butter and soft paneer cubes.",
+    "price": 279,
+    "rating": 4.8,
+    "category": "North Indian",
+    "image": "paneer_butter_masala"
+  },
+  {
+    "id": 2,
+    "name": "Chole Bhature",
+    "description": "Spicy chickpea curry served with fluffy deep-fried bhature.",
+    "price": 199,
+    "rating": 4.6,
+    "category": "North Indian",
+    "image": "chole_bhature"
+  },
+  {
+    "id": 3,
+    "name": "Dal Makhani",
+    "description": "Slow-cooked black lentils with cream and butter for a rich flavor.",
+    "price": 239,
+    "rating": 4.7,
+    "category": "North Indian",
+    "image": "dal_makhani"
+  },
+  {
+    "id": 4,
+    "name": "Rajma Chawal",
+    "description": "Kidney beans cooked in spiced gravy served with steamed rice.",
+    "price": 179,
+    "rating": 4.5,
+    "category": "North Indian",
+    "image": "rajma_chawal"
+  },
+  {
+    "id": 5,
+    "name": "Masala Dosa",
+    "description": "Crispy rice crepe filled with spiced potato filling.",
+    "price": 149,
+    "rating": 4.7,
+    "category": "South Indian",
+    "image": "masala_dosa"
+  },
+  {
+    "id": 6,
+    "name": "Idli Sambar",
+    "description": "Soft steamed rice cakes served with sambar and chutney.",
+    "price": 129,
+    "rating": 4.6,
+    "category": "South Indian",
+    "image": "idli_sambar"
+  },
+  {
+    "id": 7,
+    "name": "Medu Vada",
+    "description": "Crispy lentil fritters served with coconut chutney.",
+    "price": 99,
+    "rating": 4.5,
+    "category": "South Indian",
+    "image": "medu_vada"
+  },
+  {
+    "id": 8,
+    "name": "Pesarattu",
+    "description": "Green gram dosa served with spicy ginger chutney.",
+    "price": 139,
+    "rating": 4.4,
+    "category": "South Indian",
+    "image": "pesarattu"
+  },
+  {
+    "id": 9,
+    "name": "Hyderabadi Biryani",
+    "description": "Fragrant basmati rice layered with marinated meat and spices.",
+    "price": 329,
+    "rating": 4.9,
+    "category": "Biryani & Rice",
+    "image": "hyderabadi_biryani"
+  },
+  {
+    "id": 10,
+    "name": "Veg Pulao",
+    "description": "Aromatic rice cooked with vegetables and mild spices.",
+    "price": 189,
+    "rating": 4.4,
+    "category": "Biryani & Rice",
+    "image": "veg_pulao"
+  },
+  {
+    "id": 11,
+    "name": "Egg Biryani",
+    "description": "Flavorful biryani rice cooked with spiced boiled eggs.",
+    "price": 249,
+    "rating": 4.6,
+    "category": "Biryani & Rice",
+    "image": "egg_biryani"
+  },
+  {
+    "id": 12,
+    "name": "Lemon Rice",
+    "description": "Zesty South Indian rice flavored with lemon and mustard seeds.",
+    "price": 149,
+    "rating": 4.5,
+    "category": "Biryani & Rice",
+    "image": "lemon_rice"
+  },
+  {
+    "id": 13,
+    "name": "Pani Puri",
+    "description": "Crispy puris filled with spicy tangy water and mashed potato.",
+    "price": 69,
+    "rating": 4.8,
+    "category": "Street Food",
+    "image": "pani_puri"
+  },
+  {
+    "id": 14,
+    "name": "Pav Bhaji",
+    "description": "Butter-toasted pav served with spicy mashed vegetable curry.",
+    "price": 129,
+    "rating": 4.7,
+    "category": "Street Food",
+    "image": "pav_bhaji"
+  },
+  {
+    "id": 15,
+    "name": "Aloo Tikki Chaat",
+    "description": "Crispy potato patties topped with chutneys and curd.",
+    "price": 99,
+    "rating": 4.6,
+    "category": "Street Food",
+    "image": "aloo_tikki_chaat"
+  },
+  {
+    "id": 16,
+    "name": "Vada Pav",
+    "description": "Mumbai’s favorite snack – spicy potato vada in soft pav.",
+    "price": 69,
+    "rating": 4.7,
+    "category": "Street Food",
+    "image": "vada_pav"
+  },
+  {
+    "id": 17,
+    "name": "Chicken Tikka",
+    "description": "Boneless chicken marinated in yogurt and grilled to perfection.",
+    "price": 279,
+    "rating": 4.8,
+    "category": "Tandoori & Grill",
+    "image": "chicken_tikka"
+  },
+  {
+    "id": 18,
+    "name": "Seekh Kebab",
+    "description": "Minced meat skewers grilled with aromatic spices.",
+    "price": 299,
+    "rating": 4.7,
+    "category": "Tandoori & Grill",
+    "image": "seekh_kebab"
+  },
+  {
+    "id": 19,
+    "name": "Paneer Tikka",
+    "description": "Char-grilled paneer cubes marinated in Indian spices.",
+    "price": 249,
+    "rating": 4.8,
+    "category": "Tandoori & Grill",
+    "image": "paneer_tikka"
+  },
+  {
+    "id": 20,
+    "name": "Tandoori Chicken",
+    "description": "Smoky chicken cooked in a traditional clay oven.",
+    "price": 329,
+    "rating": 4.9,
+    "category": "Tandoori & Grill",
+    "image": "tandoori_chicken"
+  },
+  {
+    "id": 21,
+    "name": "Gulab Jamun",
+    "description": "Soft fried milk balls soaked in sugar syrup.",
+    "price": 89,
+    "rating": 4.9,
+    "category": "Indian Sweets",
+    "image": "gulab_jamun"
+  },
+  {
+    "id": 22,
+    "name": "Rasgulla",
+    "description": "Spongy cottage cheese balls soaked in light syrup.",
+    "price": 99,
+    "rating": 4.7,
+    "category": "Indian Sweets",
+    "image": "rasgulla"
+  },
+  {
+    "id": 23,
+    "name": "Jalebi",
+    "description": "Crispy deep-fried sweet spirals soaked in syrup.",
+    "price": 79,
+    "rating": 4.8,
+    "category": "Indian Sweets",
+    "image": "jalebi"
+  },
+  {
+    "id": 24,
+    "name": "Kaju Katli",
+    "description": "Smooth cashew fudge topped with edible silver leaf.",
+    "price": 149,
+    "rating": 4.9,
+    "category": "Indian Sweets",
+    "image": "kaju_katli"
+  },
+  {
+    "id": 25,
+    "name": "Chocolate Truffle Cake",
+    "description": "Moist chocolate sponge layered with rich truffle frosting.",
+    "price": 499,
+    "rating": 4.8,
+    "category": "Cake",
+    "image": "choco_truffle_cake"
+  },
+  {
+    "id": 26,
+    "name": "Red Velvet Cake",
+    "description": "Soft red sponge layered with cream cheese frosting.",
+    "price": 549,
+    "rating": 4.9,
+    "category": "Cake",
+    "image": "red_velvet_cake"
+  },
+  {
+    "id": 27,
+    "name": "Samosa",
+    "description": "Crispy pastry filled with spiced potato and peas.",
+    "price": 49,
+    "rating": 4.5,
+    "category": "Fusion & Snacks",
+    "image": "samosa"
+  },
+  {
+    "id": 28,
+    "name": "Paneer Puff",
+    "description": "Flaky pastry stuffed with spicy paneer filling.",
+    "price": 59,
+    "rating": 4.4,
+    "category": "Fusion & Snacks",
+    "image": "paneer_puff"
+  },
+  {
+    "id": 29,
+    "name": "Masala Chai",
+    "description": "Aromatic Indian tea brewed with milk and spices.",
+    "price": 49,
+    "rating": 4.9,
+    "category": "Beverages",
+    "image": "masala_chai"
+  },
+  {
+    "id": 30,
+    "name": "Lassi",
+    "description": "Traditional yogurt drink served sweet or salted.",
+    "price": 79,
+    "rating": 4.8,
+    "category": "Beverages",
+    "image": "lassi"
+  }
+]

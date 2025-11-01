@@ -1,0 +1,154 @@
+.cart {
+  padding: 4rem 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: #fafafa;
+  animation: fadeIn 0.5s ease;
+}
+
+.cart-header {
+  text-align: center;
+}
+
+.cart-header h2 {
+  font-size: 2rem;
+  color: #ff6a00;
+}
+
+.cart-table {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.cart-table-header,
+.cart-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.cart-row {
+  transition: background 0.3s ease;
+}
+
+.cart-row:hover {
+  background: #fff4eb;
+}
+
+.cart-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.cart-remove {
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #ff6a00;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.cart-remove:hover {
+  color: #ff3b00;
+}
+
+.cart-empty {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.cart-empty button {
+  background: #ff6a00;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.cart-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.cart-total, .cart-promo {
+  flex: 1;
+  min-width: 320px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.cart-total h3, .cart-promo h3 {
+  color: #ff6a00;
+  margin-bottom: 1rem;
+}
+
+.cart-line {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.cart-line.total {
+  font-size: 1.2rem;
+}
+
+.checkout-btn {
+  width: 100%;
+  margin-top: 1.5rem;
+  background: #ff6a00;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.checkout-btn:hover {
+  background: #e55c00;
+}
+
+.promo-input {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.promo-input input {
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.promo-input button {
+  background: #ff6a00;
+  border: none;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.promo-input button:hover {
+  background: #e55c00;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}

@@ -1,0 +1,144 @@
+.login-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  display: grid;
+  place-items: center;
+  z-index: 999;
+  animation: fadeIn 0.3s ease;
+}
+
+.login-card {
+  background: #fff;
+  width: min(400px, 90%);
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  position: relative;
+  animation: slideUp 0.4s ease;
+}
+
+.close-btn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 18px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+.close-btn:hover { opacity: 1; }
+
+.login-header {
+  text-align: center;
+}
+.login-logo {
+  width: 150px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+.login-header h2 {
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.25rem;
+}
+.login-header h2 span {
+  color: #ff6a00;
+}
+.login-header p {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.login-form input {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.2s;
+}
+.login-form input:focus {
+  border-color: #ff6a00;
+  box-shadow: 0 0 0 3px rgba(255, 99, 71, 0.1);
+}
+
+.primary-btn {
+  background: #ff6a00;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.primary-btn:hover {
+  background: #ff7b5c;
+}
+
+.terms {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.switch-mode {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+.switch-mode span {
+  color: #ff6a00;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.terms input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+  padding: 6px;
+}
+
+.terms input[type="checkbox"]:checked {
+  background-color: #ff6a00;
+  border-color: #ff6a00;
+}
+
+.terms input[type="checkbox"]:checked::after {
+  content: "✔";
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  font-size: 14px;
+  color: #fff;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

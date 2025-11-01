@@ -1,0 +1,164 @@
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 3rem 5%;
+  background: linear-gradient(180deg, #fff, #fff6ef);
+  font-family: "Inter", sans-serif;
+}
+
+.menu-header {
+  text-align: center;
+  max-width: 720px;
+}
+
+.menu-header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu-icon {
+  color: #ff7a00;
+}
+
+.menu-subtitle {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* === CATEGORY GRID === */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  justify-items: center;
+  padding: 0 1rem;
+}
+
+.menu-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(6px);
+  border-radius: 18px;
+  padding: 1rem;
+  width: 140px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(255, 122, 0, 0.25);
+}
+
+.menu-card-img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(145deg, #fff3e2, #fff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.menu-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.4s ease;
+}
+
+.menu-card:hover img {
+  transform: scale(1.1);
+}
+
+.menu-card p {
+  margin-top: 0.75rem;
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* === ACTIVE STATE === */
+.menu-card.active {
+  background: linear-gradient(145deg, #ff8800, #ffb347);
+  box-shadow: 0 6px 18px rgba(255, 136, 0, 0.3);
+  color: #fff;
+}
+
+.menu-card.active img {
+  transform: scale(1.05);
+}
+
+.menu-card.active p {
+  color: #fff;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 1024px) {
+  .menu-section {
+    padding: 2.5rem 3%;
+  }
+  .menu-header h1 {
+    font-size: 2rem;
+  }
+  .menu-card {
+    width: 120px;
+    padding: 0.9rem;
+  }
+  .menu-card-img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-section {
+    padding: 2rem 2%;
+  }
+  .menu-header h1 {
+    font-size: 1.7rem;
+  }
+  .menu-subtitle {
+    font-size: 0.9rem;
+  }
+  .menu-grid {
+    gap: 1.2rem;
+  }
+  .menu-card {
+    width: 110px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .menu-card {
+    width: 100px;
+    padding: 0.7rem;
+  }
+  .menu-card-img {
+    width: 75px;
+    height: 75px;
+  }
+  .menu-card p {
+    font-size: 0.85rem;
+  }
+}

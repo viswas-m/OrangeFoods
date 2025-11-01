@@ -1,0 +1,240 @@
+:root {
+    --accent: #ff6a00;
+    --muted: #6b6b6b;
+    --bg: #fffaf6;
+}
+
+.about-page {
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: #1f1f1f;
+    background: linear-gradient(180deg, #fff, var(--bg));
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+}
+
+/* HERO */
+.about-hero {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-hero-text h1 {
+    font-size: 2.1rem;
+    margin: 0 0 0.6rem;
+    letter-spacing: -0.3px;
+}
+
+.lead {
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.about-ctas {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 8px 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.btn.primary {
+    background: linear-gradient(90deg, var(--accent), #ff914d);
+    color: #fff;
+    box-shadow: 0 6px 20px rgba(255, 106, 0, 0.12);
+}
+
+.btn.ghost {
+    background: transparent;
+    border: 1px solid rgba(31, 31, 31, 0.06);
+    color: #1f1f1f;
+}
+
+.about-hero-media img {
+    height: 300px;
+    border-radius: 14px;
+}
+
+.team-photo img {
+    height: 300px;
+    border-radius: 14px;
+}
+
+/* values */
+.about-values .values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.value {
+    padding: 1.1rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(31, 31, 31, 0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: flex-start;
+    position: relative;
+}
+
+.value:hover{
+  transform: translateY(-6px);
+}
+
+.value-icon {
+    position: absolute;
+    right: 10px;
+}
+
+.value h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.value p {
+    margin: 6px 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+/* stats */
+.about-stats {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.stat {
+    background: #fff;
+    padding: 1rem 1.3rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(31, 31, 31, 0.04);
+}
+
+.stat:hover{
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--accent);
+}
+
+.stat-number {
+    font-weight: 800;
+    color: var(--accent);
+    font-size: 1.5rem;
+}
+
+.stat-label {
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.about-team {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 2.5rem;
+    align-items: center;
+    padding: 4rem 6vw;
+    background: var(--surface);
+    border-radius: 2rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+.team-text h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.team-text p {
+    color: var(--muted);
+    line-height: 1.6;
+    font-size: 1.05rem;
+    margin-bottom: 1.25rem;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.team-list li strong {
+    color: var(--accent);
+}
+
+.team-photo img {
+    height: 300px;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-photo img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 768px) {
+    .about-team {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .team-photo {
+        order: -1;
+    }
+
+    .team-photo img {
+        border-radius: 1.25rem;
+    }
+}
+
+
+/* footer cta */
+.about-footer-cta {
+    text-align: center;
+    padding: 1.3rem;
+    line-height: 40px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #fff, #fff7f1);
+    border: 1px solid rgba(31, 31, 31, 0.03);
+}
+
+@media (max-width: 980px) {
+    .about-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .about-team {
+        grid-template-columns: 1fr;
+    }
+
+    .about-values .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .about-page {
+        padding: 1.25rem;
+    }
+}
