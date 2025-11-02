@@ -54,44 +54,27 @@ import masala_chai from './masala_chai.jpg';
 import lassi from './lassi.jpg';
 
 
-import add_icon_white from './add_icon_white.png'
-import add_icon_green from './add_icon_green.png'
-import remove_icon_red from './remove_icon_red.png'
-import app_store from './app_store.png'
-import play_store from './play_store.png'
-import linkedin_icon from './linkedin_icon.png'
-import facebook_icon from './facebook_icon.png'
-import twitter_icon from './twitter_icon.png'
-import cross_icon from './cross_icon.png'
-import selector_icon from './selector_icon.png'
-import rating_starts from './rating_starts.png'
-import profile_icon from './profile_icon.png'
-import bag_icon from './bag_icon.png'
-import logout_icon from './logout_icon.png'
-import parcel_icon from './parcel_icon.png'
-import about_hero from './about_hero.jpg'
-import team_photo from './team_photo.jpg'
+import add_icon_white from './add_icon_white.png';
+import add_icon_green from './add_icon_green.png';
+import remove_icon_red from './remove_icon_red.png';
+import cross_icon from './cross_icon.png';
+import about_hero from './about_hero.jpg';
+import team_photo from './team_photo.jpg';
+
+import special_offer1 from './special_offer1.jpg';
+import special_offer2 from './special_offer2.jpg';
+import special_offer3 from './special_offer3.jpg';
+
 
 export const assets = {
     main_logo,
     header_img1,
     header_img2,
     header_img3,
-    rating_starts,
     add_icon_green,
     add_icon_white,
     remove_icon_red,
-    app_store,
-    play_store,
-    linkedin_icon,
-    facebook_icon,
-    twitter_icon,
     cross_icon,
-    selector_icon,
-    profile_icon,
-    logout_icon,
-    bag_icon,
-    parcel_icon,
     about_hero,
     team_photo,
     paneer_butter_masala,
@@ -132,6 +115,9 @@ export const assets = {
 
   masala_chai,
   lassi,
+  special_offer1,
+  special_offer2,
+  special_offer3
 }
 export const menu_list = [
     { menu_name: "North Indian", menu_image: north_indian },

@@ -1,0 +1,83 @@
+.notfound {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 80vh;
+	background: linear-gradient(135deg, #fff5eb, #ffe6cc);
+	text-align: center;
+	padding: 2rem;
+}
+
+.notfound-content {
+	max-width: 480px;
+	background: #fff;
+	padding: 3rem 2rem;
+	border-radius: 1.5rem;
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+	animation: fadeIn 0.6s ease;
+}
+
+.notfound-icon {
+	font-size: 4rem;
+	color: #ff7b00;
+	margin-bottom: 1rem;
+}
+
+.notfound h1 {
+	font-size: 5rem;
+	color: #ff7b00;
+	margin: 0;
+}
+
+.notfound h2 {
+	font-size: 1.8rem;
+	color: #222;
+	margin-bottom: 0.5rem;
+}
+
+.notfound p {
+	color: #666;
+	margin-bottom: 1.5rem;
+	line-height: 1.5;
+}
+
+.btn.primary {
+	background-color: #ff7b00;
+	color: #fff;
+	border: none;
+	padding: 0.75rem 1.8rem;
+	border-radius: 30px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+
+.btn.primary:hover {
+	background-color: #e86c00;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@media (max-width: 600px) {
+	.notfound-content {
+		padding: 2rem 1.5rem;
+	}
+
+	.notfound h1 {
+		font-size: 3.5rem;
+	}
+
+	.notfound h2 {
+		font-size: 1.4rem;
+	}
+}

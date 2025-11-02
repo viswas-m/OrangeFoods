@@ -1,0 +1,119 @@
+.details-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: calc(100vh - 120px);
+	background: linear-gradient(135deg, #fff8f3 0%, #ffe5cc 100%);
+	padding: 2rem;
+}
+
+.details-card {
+	background: #fff;
+	padding: 2rem 2.5rem;
+	border-radius: 24px;
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+	max-width: 500px;
+	width: 100%;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.details-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	margin-bottom: 1.8rem;
+}
+
+.avatar {
+	width: 80px;
+	height: 80px;
+	background: linear-gradient(135deg, #ff7e00, #ff5100);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 2.5rem;
+	font-weight: 700;
+	box-shadow: 0 4px 10px rgba(255, 90, 0, 0.3);
+}
+
+.profile-info h2 {
+	margin: 0;
+	font-size: 1.6rem;
+	color: #222;
+}
+
+.user-email {
+	color: #666;
+	font-size: 0.95rem;
+	margin: 3px 0;
+}
+
+.user-tier {
+	background: rgba(255, 94, 0, 0.1);
+	color: #ff5e00;
+	font-weight: 600;
+	padding: 0.25rem 0.8rem;
+	border-radius: 20px;
+	font-size: 0.85rem;
+}
+
+.details-section {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-bottom: 2rem;
+	border-top: 1px solid #eee;
+	padding-top: 1.5rem;
+}
+
+.detail-item {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 0.6rem;
+	border-bottom: 1px solid #f3f3f3;
+}
+
+.detail-label {
+	font-weight: 600;
+	color: #555;
+}
+
+.detail-value {
+	font-weight: 500;
+	color: #111;
+}
+
+.details-btn {
+	width: 100%;
+	background: linear-gradient(135deg, #ff6b00, #ff3c00);
+	color: #fff;
+	border: none;
+	padding: 0.9rem;
+	font-size: 1rem;
+	font-weight: 600;
+	border-radius: 14px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.details-btn:hover {
+	background: linear-gradient(135deg, #ff3c00, #ff0000);
+	transform: translateY(-2px);
+}
+
+.empty {
+	text-align: center;
+	color: #666;
+	font-size: 1rem;
+	background: #fff;
+	border-radius: 16px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+	padding: 2rem;
+}

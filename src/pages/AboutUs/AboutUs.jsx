@@ -10,7 +10,7 @@ const IconCheck = ({ className = "" }) => (
 );
 
 const AboutUs = () => {
-     const navigate = useNavigate();
+    const navigate = useNavigate();
     return (
         <main className="about-page">
             <section className="about-hero">
@@ -21,7 +21,7 @@ const AboutUs = () => {
                         Fresh ingredients, sustainable packaging, and lightning-fast delivery — made for today’s food lovers.
                     </p>
                     <div className="about-ctas">
-                        <button className="btn primary" onClick={() => navigate("/")}>Explore Menu</button>
+                        <button className="btn primary" onClick={() => navigate("/#explore-menu")}>Explore Menu</button>
                         <a className="btn ghost" href="#our-values">Our Values</a>
                     </div>
                 </div>
@@ -85,7 +85,6 @@ const AboutUs = () => {
                     <img src={assets.team_photo} alt="Orange Foods team" />
                 </div>
             </section>
-
 
             <section className="about-footer-cta">
                 <h3>Hungry yet?</h3>

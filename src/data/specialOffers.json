@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"title": "Weekend Feast Combo",
+		"description": "Get 25% off on your favorite biryanis and kebabs this weekend only!",
+		"image": "special_offer1",
+		"discount": "25% OFF",
+		"validTill": "Sunday Midnight"
+	},
+	{
+		"id": 2,
+		"title": "Sweet Tooth Deal",
+		"description": "Buy any dessert and get another at half price — from Gulab Jamun to Red Velvet Cake.",
+		"image": "special_offer2",
+		"discount": "BOGO 50%",
+		"validTill": "This Week Only"
+	},
+	{
+		"id": 3,
+		"title": "Healthy Start Offer",
+		"description": "Order any 2 South Indian breakfasts and get a free Masala Chai.",
+		"image": "special_offer3",
+		"discount": "Free Add-on",
+		"validTill": "Limited Period"
+	}
+]

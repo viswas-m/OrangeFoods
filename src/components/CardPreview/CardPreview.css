@@ -1,0 +1,71 @@
+.card-preview {
+	width: 340px;
+	height: 200px;
+	border-radius: 16px;
+	background: linear-gradient(135deg, #ff7a00, #ffb84d);
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	box-shadow: 0 10px 25px rgba(255, 122, 0, 0.3);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	margin-bottom: 2rem;
+}
+
+.card-preview:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 15px 35px rgba(255, 122, 0, 0.4);
+}
+
+.card-chip {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.wifi-icon {
+	font-size: 22px;
+	color: rgba(255, 255, 255, 0.9);
+	transform: rotate(90deg);
+}
+
+.card-details {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.card-number {
+	font-size: 1.4rem;
+	letter-spacing: 2px;
+	font-weight: 600;
+}
+
+.card-info {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 2rem;
+}
+
+.label-card {
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	opacity: 0.8;
+	margin: 0;
+}
+
+.value-card {
+	font-size: 0.95rem;
+	font-weight: 500;
+	margin-top: 2px;
+}
+
+.card-brand {
+	position: absolute;
+	bottom: 18px;
+	right: 22px;
+	font-size: 40px;
+	opacity: 0.9;
+}

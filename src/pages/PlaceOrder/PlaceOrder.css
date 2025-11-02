@@ -1,113 +1,114 @@
 .place-order {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 3rem;
-  padding: 4rem 8%;
-  background: #fafafa;
-  animation: fadeIn 0.5s ease;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 3rem;
+	padding: 4rem 8%;
+	background: #fafafa;
+	animation: fadeIn 0.5s ease;
 }
 
 .place-order-left,
 .place-order-right {
-  flex: 1;
-  min-width: 340px;
-  background: #fff;
-  padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+	flex: 1;
+	min-width: 340px;
+	background: #fff;
+	padding: 2rem;
+	border-radius: 16px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #ff6a00;
-  margin-bottom: 1.5rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #ff6a00;
+	margin-bottom: 1.5rem;
 }
 
 .place-order-left input {
-  width: 100%;
-  padding: 0.8rem;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  font-size: 0.95rem;
-  transition: border-color 0.3s, box-shadow 0.3s;
+	width: 100%;
+	padding: 0.8rem;
+	margin-bottom: 1rem;
+	border-radius: 8px;
+	border: 1px solid #ddd;
+	font-size: 0.95rem;
+	transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .place-order-left input:focus {
-  border-color: #ff6a00;
-  box-shadow: 0 0 4px rgba(255, 106, 0, 0.3);
-  outline: none;
+	border-color: #ff6a00;
+	box-shadow: 0 0 4px rgba(255, 106, 0, 0.3);
+	outline: none;
 }
 
 .multi-field {
-  display: flex;
-  gap: 1rem;
+	display: flex;
+	gap: 1rem;
 }
 
 .cart-total {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
 }
 
 .cart-total h2 {
-  color: #ff6a00;
-  margin-bottom: 0.5rem;
+	color: #ff6a00;
+	margin-bottom: 0.5rem;
 }
 
 .cart-total-details {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1rem;
+	display: flex;
+	justify-content: space-between;
+	font-size: 1rem;
 }
 
 .cart-total-details.total {
-  font-size: 1.2rem;
-  margin-top: 0.8rem;
+	font-size: 1.2rem;
+	margin-top: 0.8rem;
 }
 
 .proceed-btn {
-  width: 100%;
-  margin-top: 1.5rem;
-  padding: 0.9rem;
-  background: #ff6a00;
-  color: #fff;
-  border: none;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+	width: 100%;
+	margin-top: 1.5rem;
+	padding: 0.9rem;
+	background: #ff6a00;
+	color: #fff;
+	border: none;
+	font-size: 1rem;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background 0.3s ease;
 }
 
 .proceed-btn:hover {
-  background: #e55c00;
+	background: #e55c00;
 }
 
 .proceed-btn:disabled {
-  background: #ccc;
-  cursor: not-allowed;
+	background: #ccc;
+	cursor: not-allowed;
 }
 
 @media (max-width: 768px) {
-  .place-order {
-    flex-direction: column;
-    padding: 2rem 6%;
-  }
+	.place-order {
+		flex-direction: column;
+		padding: 2rem 6%;
+	}
 
-  .multi-field {
-    flex-direction: column;
-  }
+	.multi-field {
+		flex-direction: column;
+	}
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
