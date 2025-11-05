@@ -43,9 +43,9 @@ const Cart = () => {
 								<div className="cart-row" key={item.id}>
 									<img src={assets[item.image]} alt={item.name} className="cart-img" onClick={() => navigate(`/food/${item.id}`)} />
 									<p>{item.name}</p>
-									<p>${item.price}</p>
+									<p>₹{item.price}</p>
 									<p>{cartItems[item.id]}</p>
-									<p>${(item.price * cartItems[item.id]).toFixed(2)}</p>
+									<p>₹{(item.price * cartItems[item.id]).toFixed(2)}</p>
 									<span
 										className="cart-remove"
 										onClick={() => removeFromCart(item.id)}
