@@ -33,7 +33,6 @@ const App = () => {
 					<Route path="/cart" element={<Cart/>} />
 
 					{/* Protected routes */}
-					{/* <Route path="/cart" element={<ProtectedRoute element={<Cart />} />} /> */}
 					<Route path="/order" element={<ProtectedRoute element={<PlaceOrder />} setShowLogin={setShowLogin} />} />
 					<Route path="/payment" element={<ProtectedRoute element={<Payment />} setShowLogin={setShowLogin} />} />
 					<Route path="/myorders" element={<ProtectedRoute element={<MyOrders />} setShowLogin={setShowLogin} />} />
