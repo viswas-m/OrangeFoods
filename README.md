@@ -9,7 +9,7 @@ Orange Foods is a **modern, responsive food delivery web application** built usi
 ## 🚀 Features
 
 ### 🏠 **Home Page**
-![Home Page](./public/Home%20Page.gif)
+![Home Page](./src/assets/Home%20Page.jpeg)
 > The Home Page serves as the central hub for exploring the full Orange Foods experience — built with a modern, mobile-first design.
 
 - **Elegant Navigation Bar:**  
@@ -45,8 +45,6 @@ Orange Foods is a **modern, responsive food delivery web application** built usi
 
 ### 🍽️ **Food Display**
 
-![Food Display](./public//Food%20Items.gif)
-
 > The Food Display section showcases all dishes dynamically and connects directly with the Cart and Food Details pages.
 
 - **Dynamic Food Grid:**  
@@ -74,7 +72,7 @@ Orange Foods is a **modern, responsive food delivery web application** built usi
 
 ### 🔍 Food Details Page
 
-![Food Details](./public/Food%20Details.gif)
+![Food Details](./src/assets/Food%20details.png)
 
 - Detailed view of a selected dish.
 - Includes:
@@ -95,7 +93,7 @@ Orange Foods is a **modern, responsive food delivery web application** built usi
 The **LoginPopup** component provides a responsive, modal-based authentication interface for users.  
 It is implemented using **React Portals** to overlay the form above all UI layers for a clean, app-like experience.
 
-![Login](./public/login.png)
+![Login](./src/assets/login.png)
 
 #### 🧠 Core Features
 - **Dual Mode Authentication:** Switches between *Login* and *Sign Up* modes dynamically.  
@@ -112,7 +110,7 @@ It is implemented using **React Portals** to overlay the form above all UI layer
 
 ### 🛒 Cart System
 
-![Cart](./public/checkout.png)
+![Cart](./src/assets/checkout.png)
 
 - Managed through **React Context** (`StoreContext`).
 - Add, remove, and update quantity of items in cart.
@@ -123,7 +121,7 @@ It is implemented using **React Portals** to overlay the form above all UI layer
 
 ### 🧭 About Us Page
 
-![About Us](./public/aboutus.gif)
+![About Us](./src/assets/AboutUS.jpeg)
 
 The **About Us** page introduces _Orange Foods_ as a modern food delivery platform designed to connect users with their favorite dishes from multiple cuisines.  
 It highlights:
@@ -152,7 +150,7 @@ It covers:
 
 ### 💳 Payment Page
 
-![Payment](./src/assets/about_hero1.jpg)
+![Payment](./src/assets/payment.png)
 
 The **Payment Page** provides a secure and seamless checkout experience (frontend only).  
 Features include:
@@ -164,7 +162,7 @@ Features include:
 
 ### 📦 My Orders Page
 
-![My Orders](./public/Myorders.png)
+![My Orders](./src/assets/My_Orders.png)
 
 The **My Orders** page enables users to track and manage their past and current orders.  
 It includes:
