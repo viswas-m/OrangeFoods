@@ -135,7 +135,7 @@ It highlights:
 
 ### 🔐 Privacy Policy Page
 
-![Privacy Policy](./public/privacypolicy.png)
+![Privacy Policy](./src/assets/privacypolicy.png)
 
 The **Privacy Policy** page outlines how _Orange Foods_ collects, uses, and protects user data.  
 It covers:
