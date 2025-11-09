@@ -7,7 +7,7 @@ import './index.css';
 import AuthProvider from './context/AuthContext.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-	<BrowserRouter>
+	<BrowserRouter basename="/OrangeFoods">
 		<AuthProvider>
 			<StoreContextProvider>
 				<App />
