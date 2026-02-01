@@ -5,7 +5,7 @@
 .food-display h2 {
 	font-size: 1.8rem;
 	margin-bottom: 25px;
-	color: #222;
+	color: var(--text-primary);
 }
 
 .food-display-list {

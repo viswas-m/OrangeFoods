@@ -3,46 +3,47 @@
 	align-items: center;
 	justify-content: center;
 	min-height: 80vh;
-	background: linear-gradient(135deg, #fff5eb, #ffe6cc);
 	text-align: center;
 	padding: 2rem;
+	transition: background-color var(--transition-normal);
 }
 
 .notfound-content {
 	max-width: 480px;
-	background: #fff;
+	background: var(--surface-color);
 	padding: 3rem 2rem;
 	border-radius: 1.5rem;
-	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+	box-shadow: var(--shadow-lg);
 	animation: fadeIn 0.6s ease;
+	border: 1px solid var(--border-color);
 }
 
 .notfound-icon {
 	font-size: 4rem;
-	color: #ff7b00;
+	color: var(--primary-color);
 	margin-bottom: 1rem;
 }
 
 .notfound h1 {
 	font-size: 5rem;
-	color: #ff7b00;
+	color: var(--primary-color);
 	margin: 0;
 }
 
 .notfound h2 {
 	font-size: 1.8rem;
-	color: #222;
+	color: var(--text-primary);
 	margin-bottom: 0.5rem;
 }
 
 .notfound p {
-	color: #666;
+	color: var(--text-secondary);
 	margin-bottom: 1.5rem;
 	line-height: 1.5;
 }
 
 .btn.primary {
-	background-color: #ff7b00;
+	background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 	color: #fff;
 	border: none;
 	padding: 0.75rem 1.8rem;
@@ -50,10 +51,13 @@
 	font-weight: 600;
 	cursor: pointer;
 	transition: background 0.3s ease;
+	box-shadow: var(--shadow-sm);
 }
 
 .btn.primary:hover {
-	background-color: #e86c00;
+	background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+	box-shadow: var(--shadow-md);
+	transform: translateY(-2px);
 }
 
 @keyframes fadeIn {

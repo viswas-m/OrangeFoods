@@ -4,8 +4,7 @@
 	align-items: center;
 	gap: 2.5rem;
 	padding: 3rem 5%;
-	background: linear-gradient(180deg, #fff, #fff6ef);
-	font-family: "Inter", sans-serif;
+	transition: background-color var(--transition-normal);
 }
 
 .menu-header {
@@ -16,7 +15,7 @@
 .menu-header h1 {
 	font-size: 2.4rem;
 	font-weight: 700;
-	color: #1e1e1e;
+	color: var(--text-primary);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -24,11 +23,11 @@
 }
 
 .menu-icon {
-	color: #ff7a00;
+	color: var(--primary-color);
 }
 
 .menu-subtitle {
-	color: #555;
+	color: var(--text-secondary);
 	font-size: 1rem;
 	line-height: 1.6;
 	margin-top: 10px;
@@ -45,20 +44,22 @@
 }
 
 .menu-card {
-	background: rgba(255, 255, 255, 0.8);
+	background: var(--surface-color);
 	backdrop-filter: blur(6px);
-	border-radius: 18px;
+	border-radius: var(--radius-lg);
 	padding: 1rem;
 	width: 140px;
 	text-align: center;
-	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+	box-shadow: var(--shadow-sm);
 	transition: all 0.3s ease;
 	cursor: pointer;
+	border: 1px solid var(--border-color);
 }
 
 .menu-card:hover {
 	transform: translateY(-6px);
-	box-shadow: 0 8px 20px rgba(255, 122, 0, 0.25);
+	box-shadow: var(--shadow-md);
+	border-color: var(--primary-color);
 }
 
 .menu-card-img {
@@ -67,7 +68,7 @@
 	margin: 0 auto;
 	border-radius: 50%;
 	overflow: hidden;
-	background: linear-gradient(145deg, #fff3e2, #fff);
+	background: linear-gradient(145deg, var(--surface-secondary), var(--surface-color));
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -89,20 +90,22 @@
 .menu-card p {
 	margin-top: 0.75rem;
 	font-weight: 600;
-	color: #333;
+	color: var(--text-primary);
 	font-size: 1rem;
 	transition: color 0.3s ease;
 }
 
 /* === ACTIVE STATE === */
 .menu-card.active {
-	background: linear-gradient(145deg, #ff8800, #ffb347);
-	box-shadow: 0 6px 18px rgba(255, 136, 0, 0.3);
+	background: linear-gradient(145deg, var(--primary-color), var(--secondary-color));
+	box-shadow: var(--shadow-md);
 	color: #fff;
+	border-color: transparent;
 }
 
 .menu-card.active img {
 	transform: scale(1.05);
+	border: 2px solid white;
 }
 
 .menu-card.active p {

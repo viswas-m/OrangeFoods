@@ -6,11 +6,12 @@
 .privacy-page {
 	font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 	padding: 2rem;
-	background: linear-gradient(180deg, #fff, #fffaf6);
-	color: #222;
+	/* background: linear-gradient(180deg, var(--bg-color), var(--surface-secondary)); */
+	color: var(--text-primary);
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
+	transition: background-color var(--transition-normal);
 }
 
 /* Hero */
@@ -24,10 +25,11 @@
 .privacy-left h1 {
 	font-size: 1.6rem;
 	margin: 0 0 0.5rem;
+	color: var(--text-primary);
 }
 
 .privacy-left .lead {
-	color: var(--muted);
+	color: var(--text-secondary);
 	line-height: 1.5;
 }
 
@@ -39,10 +41,11 @@
 }
 
 .policy-panel {
-	background: #fff;
-	padding: 1rem;
-	border-radius: 10px;
-	box-shadow: 0 6px 20px rgba(31, 31, 31, 0.04);
+	background: var(--surface-color);
+	padding: 1.5rem;
+	border-radius: 12px;
+	box-shadow: var(--shadow-sm);
+	border: 1px solid var(--border-color);
 }
 
 .panel-head {
@@ -52,32 +55,40 @@
 	margin-bottom: 0.6rem;
 }
 
+.panel-head h3 {
+	color: var(--text-primary);
+}
+
 .panel-head svg {
 	flex-shrink: 0;
-	color: #ff6a00;
+	color: var(--primary-color);
 }
 
 .policy-panel ul {
 	margin: 0.4rem 0 0 1rem;
-	color: var(--muted);
+	color: var(--text-secondary);
 }
 
 .policy-panel p {
-	color: var(--muted);
+	color: var(--text-secondary);
 	line-height: 1.6;
 }
 
 .privacy-illus {
 	margin-right: 20px;
-	color: var(--accent);
+	color: var(--primary-color);
 }
 
 /* Footer */
 .privacy-footer {
 	text-align: center;
-	color: var(--muted);
+	color: var(--text-muted);
 	font-size: 0.95rem;
 	padding: 1rem;
+}
+
+.privacy-footer a {
+	color: var(--primary-color);
 }
 
 /* Responsive */

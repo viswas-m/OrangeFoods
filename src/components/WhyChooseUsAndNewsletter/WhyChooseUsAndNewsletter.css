@@ -5,29 +5,30 @@
 	gap: 2rem;
 	font-family: "Poppins", sans-serif;
 	margin-bottom: 2rem;
+	padding: 0 4%;
 }
 
 /* ---------------- WHY CHOOSE US ---------------- */
 .why-choose-us {
-	background: #ffffff;
+	background: var(--surface-secondary);
 	border-radius: 24px;
-	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+	box-shadow: var(--shadow-sm);
 	text-align: center;
 	backdrop-filter: blur(8px);
-	padding: 2rem;
-	border: 1.5px solid rgba(255, 106, 0, 0.3);
+	padding: 3rem 2rem;
+	border: 1px solid var(--border-color);
 }
 
 .section-title {
 	font-size: 2.4rem;
 	font-weight: 700;
-	color: #1e1e1e;
+	color: var(--text-primary);
 	margin-bottom: 3rem;
 	letter-spacing: -0.5px;
 }
 
 .section-title span {
-	background: linear-gradient(90deg, #ff7a00, #ffae42);
+	background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -35,19 +36,20 @@
 /* WHY GRID */
 .why-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 	gap: 2rem;
 }
 
 .why-card {
-	background: #ffffff;
+	background: var(--surface-color);
 	border-radius: 20px;
 	padding: 2rem 1.5rem;
-	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+	box-shadow: var(--shadow-sm);
 	transition: all 0.3s ease;
 	text-align: center;
 	position: relative;
 	overflow: hidden;
+	border: 1px solid var(--border-color);
 }
 
 .why-card::before {
@@ -57,7 +59,7 @@
 	left: -100%;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(120deg, rgba(255, 122, 0, 0.1), rgba(255, 174, 66, 0.2));
+	background: linear-gradient(120deg, rgba(255, 106, 0, 0.05), rgba(255, 174, 66, 0.1));
 	transition: 0.5s;
 }
 
@@ -67,21 +69,22 @@
 
 .why-card:hover {
 	transform: translateY(-6px);
-	box-shadow: 0 12px 30px rgba(255, 122, 0, 0.15);
+	box-shadow: var(--shadow-lg);
+	border-color: var(--primary-color);
 }
 
 .why-icon {
 	font-size: 2.6rem;
-	color: #ff7a00;
+	color: var(--primary-color);
 	margin-bottom: 1rem;
-	background: rgba(255, 122, 0, 0.08);
+	background: var(--surface-secondary);
 	padding: 1rem;
 	border-radius: 50%;
 	transition: all 0.3s ease;
 }
 
 .why-card:hover .why-icon {
-	background: linear-gradient(135deg, #ff7a00, #ffae42);
+	background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 	color: #fff;
 	transform: scale(1.1);
 }
@@ -89,26 +92,27 @@
 .why-card h3 {
 	font-size: 1.25rem;
 	font-weight: 600;
-	color: #1e1e1e;
+	color: var(--text-primary);
 	margin-bottom: 0.5rem;
 }
 
 .why-card p {
 	font-size: 0.95rem;
-	color: #666;
+	color: var(--text-secondary);
 	line-height: 1.6;
 	margin: 0;
 }
 
 /* ---------------- NEWSLETTER ---------------- */
 .newsletter {
-	background: linear-gradient(135deg, #ff7a00, #ffae42);
+	background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 	color: #fff;
 	border-radius: 24px;
 	padding: 5rem 2rem;
 	text-align: center;
 	position: relative;
 	overflow: hidden;
+	box-shadow: var(--shadow-lg);
 }
 
 .newsletter::after {
@@ -136,12 +140,11 @@
 
 .newsletter-desc {
 	font-size: 1rem;
-	color: #fffbe9;
+	color: rgba(255, 255, 255, 0.9);
 	margin-bottom: 2.5rem;
 	max-width: 600px;
 	margin-inline: auto;
 	line-height: 1.7;
-	opacity: 0.9;
 }
 
 /* FORM */
@@ -167,7 +170,7 @@
 }
 
 .newsletter-form input:focus {
-	box-shadow: 0 0 0 3px rgba(255, 174, 66, 0.4);
+	box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
 }
 
 .newsletter-form button {
@@ -180,11 +183,12 @@
 	cursor: pointer;
 	transition: all 0.3s ease;
 	letter-spacing: 0.5px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .newsletter-form button:hover {
 	background: #fff;
-	color: #ff7a00;
+	color: var(--primary-color);
 	transform: scale(1.05);
 }
 

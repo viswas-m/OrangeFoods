@@ -2,16 +2,17 @@
 	max-width: 600px;
 	margin: 60px auto;
 	padding: 2rem;
-	background: #ffffff;
-	border-radius: 16px;
-	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+	background: var(--surface-color);
+	border-radius: var(--radius-lg);
+	box-shadow: var(--shadow-lg);
 	text-align: center;
+	border: 1px solid var(--border-color);
 }
 
 .payment-page h2 {
 	margin-bottom: 1.5rem;
 	font-size: 1.8rem;
-	color: #333;
+	color: var(--text-primary);
 }
 
 .payment-options {
@@ -19,13 +20,14 @@
 	justify-content: center;
 	gap: 1rem;
 	margin-bottom: 1.5rem;
+	flex-wrap: wrap;
 }
 
 .payment-options input[type="radio"] {
 	appearance: none;
 	width: 18px;
 	height: 18px;
-	border: 2px solid #ff7a00;
+	border: 2px solid var(--primary-color);
 	border-radius: 50%;
 	display: inline-block;
 	position: relative;
@@ -34,7 +36,7 @@
 }
 
 .payment-options input[type="radio"]:checked {
-	background-color: #ff7a00;
+	background-color: var(--primary-color);
 	box-shadow: 0 0 0 3px rgba(255, 122, 0, 0.2);
 }
 
@@ -43,14 +45,19 @@
 	align-items: center;
 	gap: 8px;
 	font-weight: 500;
-	color: #333;
+	color: var(--text-secondary);
 	cursor: pointer;
+	padding: 0.5rem 1rem;
+	border-radius: 20px;
+	border: 1px solid transparent;
+	transition: all 0.3s ease;
 }
 
 .payment-options label:hover,
 .payment-options input:checked+label {
-	background: #fff;
-	border-color: #ff7a00;
+	background: var(--surface-secondary);
+	border-color: var(--primary-color);
+	color: var(--text-primary);
 }
 
 .payment-form {
@@ -70,10 +77,19 @@
 .card-fields input,
 .upi-input {
 	padding: 0.8rem;
-	border: 1px solid #ddd;
+	border: 1px solid var(--border-color);
 	border-radius: 8px;
 	font-size: 1rem;
 	width: 100%;
+	background: var(--bg-color);
+	color: var(--text-primary);
+	outline: none;
+}
+
+.card-fields input:focus,
+.upi-input:focus {
+	border-color: var(--primary-color);
+	box-shadow: 0 0 0 2px rgba(255, 106, 0, 0.1);
 }
 
 .multi-field {
@@ -90,14 +106,30 @@
 	text-align: center;
 }
 
+.upi-section p {
+	color: var(--text-secondary);
+	margin-bottom: 0.5rem;
+}
+
 .upi-qr {
 	margin: 1rem auto;
 	width: 150px;
 	height: 150px;
+	background: #fff;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.cod-info {
+	color: var(--text-secondary);
+	font-style: italic;
+	padding: 1rem;
+	background: var(--surface-secondary);
+	border-radius: 8px;
 }
 
 .pay-btn {
-	background: linear-gradient(135deg, #ff7a00, #ffb300);
+	background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 	color: white;
 	border: none;
 	padding: 0.9rem;
@@ -105,10 +137,12 @@
 	cursor: pointer;
 	font-weight: 600;
 	transition: 0.3s;
+	box-shadow: var(--shadow-md);
 }
 
 .pay-btn:hover {
-	opacity: 0.9;
+	transform: translateY(-2px);
+	box-shadow: var(--shadow-lg);
 }
 
 .card-section {

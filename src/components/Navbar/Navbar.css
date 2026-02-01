@@ -7,21 +7,23 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 0.8rem 2rem;
-	background: rgba(255, 255, 255, 0.75);
+	background: var(--surface-color);
 	backdrop-filter: blur(15px);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid var(--border-color);
 	margin-bottom: 15px;
+	box-shadow: var(--shadow-sm);
+	transition: background-color var(--transition-normal), border-color var(--transition-normal);
 }
 
 /* ===== Logo ===== */
 .navbar-left .logo-text {
 	font-weight: 700;
 	font-size: 1.5rem;
-	color: #ff6600;
+	color: var(--primary-color);
 }
 
 .logo-text span {
-	color: #ff914d;
+	color: var(--secondary-color);
 }
 
 /* ===== Center Links ===== */
@@ -33,15 +35,15 @@
 
 .navbar-center a {
 	text-decoration: none;
-	color: #333;
+	color: var(--text-primary);
 	font-weight: 500;
 	position: relative;
-	transition: all 0.2s ease;
+	transition: color var(--transition-fast);
 }
 
 .navbar-center a.active,
 .navbar-center a:hover {
-	color: #ff6600;
+	color: var(--primary-color);
 }
 
 .navbar-center a.active::after,
@@ -52,7 +54,7 @@
 	left: 0;
 	height: 2px;
 	width: 100%;
-	background-color: #ff6600;
+	background-color: var(--primary-color);
 	border-radius: 4px;
 }
 
@@ -66,12 +68,12 @@
 .navbar-icon {
 	position: relative;
 	cursor: pointer;
-	color: #333;
+	color: var(--text-primary);
 	transition: color 0.2s ease;
 }
 
 .navbar-icon:hover {
-	color: #ff6600;
+	color: var(--primary-color);
 }
 
 .cart-badge {
@@ -87,12 +89,29 @@
 	line-height: 1;
 }
 
+/* ===== Theme Toggle ===== */
+.theme-toggle {
+	background: none;
+	border: none;
+	color: var(--text-primary);
+	cursor: pointer;
+	transition: color 0.2s ease, transform 0.2s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.theme-toggle:hover {
+	color: var(--primary-color);
+	transform: rotate(15deg);
+}
+
 /* ===== Sign Button ===== */
 .sign-btn {
 	display: flex;
 	align-items: center;
 	gap: 6px;
-	background: linear-gradient(135deg, #ff6600, #ff914d);
+	background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 	color: white;
 	border: none;
 	border-radius: 8px;
@@ -105,13 +124,14 @@
 
 .sign-btn:hover {
 	transform: scale(1.05);
-	background: linear-gradient(135deg, #ff914d, #ff6600);
+	background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
 }
 
 /* ===== Mobile Toggle ===== */
 .menu-toggle {
 	display: none;
 	cursor: pointer;
+	color: var(--text-primary);
 }
 
 /* ===== Responsive Design ===== */
@@ -122,13 +142,14 @@
 		right: -100%;
 		height: 100vh;
 		width: 70%;
-		background: rgba(255, 255, 255, 0.95);
+		background: var(--surface-color);
 		backdrop-filter: blur(15px);
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		gap: 2rem;
 		transition: right 0.3s ease;
+		box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
 	}
 
 	.navbar-center.open {
@@ -141,7 +162,8 @@
 
 	.menu-toggle {
 		display: block;
-		z-index: 1;
+		z-index: 11;
+		/* Higher than navbar-center */
 	}
 
 	.sign-btn {
@@ -170,17 +192,17 @@
 .navbar-search {
 	display: flex;
 	align-items: center;
-	background: #fff;
-	border: 1.5px solid rgba(255, 106, 0, 0.3);
+	background: var(--bg-color);
+	border: 1.5px solid var(--border-color);
 	border-radius: 50px;
 	padding: 6px 14px;
 	width: 260px;
 	transition: all 0.3s ease;
-	box-shadow: 0px 2px 8px rgba(255, 106, 0, 0.05);
+	box-shadow: var(--shadow-sm);
 }
 
 .navbar-search .search-icon {
-	color: #ff6a00;
+	color: var(--secondary-color);
 	flex-shrink: 0;
 	font-size: 20px;
 	margin-right: 8px;
@@ -193,24 +215,24 @@
 	background: transparent;
 	flex: 1;
 	font-size: 15px;
-	color: #333;
+	color: var(--text-primary);
 	font-weight: 400;
 }
 
 .navbar-search input::placeholder {
-	color: #999;
+	color: var(--text-muted);
 	font-size: 14px;
 	letter-spacing: 0.3px;
 }
 
 .navbar-search:hover {
-	border-color: #ff6a00;
-	box-shadow: 0 4px 12px rgba(255, 106, 0, 0.15);
+	border-color: var(--secondary-color);
+	box-shadow: var(--shadow-md);
 }
 
 .navbar-search:focus-within {
-	border-color: #ff6a00;
-	box-shadow: 0 4px 14px rgba(255, 106, 0, 0.25);
+	border-color: var(--primary-color);
+	box-shadow: var(--shadow-lg);
 	transform: scale(1.02);
 }
 
@@ -231,31 +253,32 @@
 	display: flex;
 	align-items: center;
 	gap: 6px;
-	background: linear-gradient(135deg, #ff8c00, #ff4d00);
+	background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
 	color: white;
 	padding: 8px 12px;
 	border-radius: 50px;
 	font-weight: 600;
 	transition: all 0.3s ease;
-	box-shadow: 0 3px 10px rgba(255, 102, 0, 0.3);
+	box-shadow: var(--shadow-md);
 }
 
 .user-icon:hover {
 	transform: translateY(-2px);
-	box-shadow: 0 5px 15px rgba(255, 102, 0, 0.4);
+	box-shadow: var(--shadow-lg);
 }
 
 .user-dropdown {
 	position: absolute;
-	top: 110%;
+	top: 120%;
 	right: 0;
-	background: white;
+	background: var(--surface-color);
 	border-radius: 10px;
-	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+	box-shadow: var(--shadow-lg);
 	overflow: hidden;
 	min-width: 150px;
 	animation: fadeIn 0.2s ease-in-out;
 	z-index: 100;
+	border: 1px solid var(--border-color);
 }
 
 .user-dropdown button {
@@ -264,17 +287,18 @@
 	padding: 12px 16px;
 	background: none;
 	border: none;
-	color: #333;
+	color: var(--text-primary);
 	font-size: 14px;
 	cursor: pointer;
 	transition: all 0.2s ease;
 	display: flex;
 	gap: 0.7rem;
+	align-items: center;
 }
 
 .user-dropdown button:hover {
-	background: #fff5ed;
-	color: #ff6600;
+	background: var(--surface-secondary);
+	color: var(--primary-color);
 }
 
 @keyframes fadeIn {

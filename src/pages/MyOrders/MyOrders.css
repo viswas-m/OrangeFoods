@@ -1,12 +1,14 @@
 .orders-page {
 	padding: 40px 8%;
 	min-height: 100vh;
+	background: var(--bg-color);
+	transition: background-color var(--transition-normal);
 }
 
 .orders-title {
 	font-size: 2rem;
 	font-weight: 700;
-	color: #ff6b35;
+	color: var(--primary-color);
 	margin-bottom: 2rem;
 	text-align: center;
 }
@@ -18,17 +20,19 @@
 }
 
 .order-card {
-	background: #fff;
-	border-radius: 16px;
-	border: 1.5px solid rgba(255, 106, 0, 0.3);
-	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+	background: var(--surface-color);
+	border-radius: var(--radius-lg);
+	border: 1px solid var(--border-color);
+	box-shadow: var(--shadow-sm);
 	padding: 20px 25px;
 	transition: all 0.3s ease;
+	color: var(--text-primary);
 }
 
 .order-card:hover {
 	transform: translateY(-4px);
-	box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+	box-shadow: var(--shadow-md);
+	border-color: var(--primary-color);
 }
 
 .order-header {
@@ -45,7 +49,7 @@
 
 .order-date {
 	font-size: 0.9rem;
-	color: #888;
+	color: var(--text-secondary);
 }
 
 .order-status {
@@ -57,12 +61,18 @@
 }
 
 .order-status.confirmed {
-	background-color: #e0f7e9;
+	background-color: rgba(17, 138, 66, 0.1);
 	color: #118a42;
+	border: 1px solid rgba(17, 138, 66, 0.2);
+}
+
+[data-theme='dark'] .order-status.confirmed {
+	background-color: rgba(17, 138, 66, 0.2);
+	color: #4ade80;
 }
 
 .order-items {
-	border-top: 1px solid #eee;
+	border-top: 1px solid var(--border-color);
 	padding-top: 10px;
 	margin-top: 10px;
 }
@@ -83,17 +93,22 @@
 
 .order-item-details h4 {
 	font-size: 1rem;
-	font-weight: 500;
+	font-weight: 600;
 	margin-bottom: 4px;
+	color: var(--text-primary);
+}
+
+.order-item-details p {
+	color: var(--text-secondary);
 }
 
 .order-footer {
-	border-top: 1px solid #eee;
+	border-top: 1px solid var(--border-color);
 	padding-top: 10px;
 	margin-top: 10px;
 	display: flex;
 	justify-content: space-between;
-	color: #333;
+	color: var(--text-primary);
 }
 
 .orders-empty {
@@ -102,11 +117,12 @@
 	align-items: center;
 	justify-content: center;
 	height: 70vh;
-	color: #555;
+	color: var(--text-secondary);
 	text-align: center;
 }
 
 .orders-empty h2 {
 	font-size: 1.8rem;
 	margin-bottom: 10px;
+	color: var(--text-primary);
 }

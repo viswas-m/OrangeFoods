@@ -5,14 +5,16 @@ import App from './App.jsx';
 import StoreContextProvider from './context/StoreContext.jsx';
 import './index.css';
 import AuthProvider from './context/AuthContext.jsx';
+import { ThemeProvider } from './context/ThemeContext.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<BrowserRouter basename="/OrangeFoods">
 		<AuthProvider>
 			<StoreContextProvider>
-				<App />
+				<ThemeProvider>
+					<App />
+				</ThemeProvider>
 			</StoreContextProvider>
 		</AuthProvider>
 	</BrowserRouter>
-
 )

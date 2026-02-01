@@ -1,17 +1,11 @@
-:root {
-	--accent: #ff6a00;
-	--muted: #6b6b6b;
-	--bg: #fffaf6;
-}
-
 .about-page {
 	font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-	color: #1f1f1f;
-	background: linear-gradient(180deg, #fff, var(--bg));
+	color: var(--text-primary);
 	padding: 2.5rem;
 	display: flex;
 	flex-direction: column;
 	gap: 2.25rem;
+	transition: background-color var(--transition-normal);
 }
 
 /* HERO */
@@ -24,12 +18,13 @@
 
 .about-hero-text h1 {
 	font-size: 2.1rem;
+	color: var(--text-primary);
 	margin: 0 0 0.6rem;
 	letter-spacing: -0.3px;
 }
 
 .lead {
-	color: var(--muted);
+	color: var(--text-secondary);
 	font-size: 1rem;
 	line-height: 1.6;
 	margin-bottom: 1rem;
@@ -50,15 +45,21 @@
 }
 
 .btn.primary {
-	background: linear-gradient(90deg, var(--accent), #ff914d);
+	background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
 	color: #fff;
-	box-shadow: 0 6px 20px rgba(255, 106, 0, 0.12);
+	box-shadow: var(--shadow-md);
 }
 
 .btn.ghost {
 	background: transparent;
-	border: 1px solid rgba(31, 31, 31, 0.06);
-	color: #1f1f1f;
+	border: 1px solid var(--border-color);
+	color: var(--text-primary);
+}
+
+.btn.ghost:hover {
+	background: var(--surface-secondary);
+	color: var(--primary-color);
+	border-color: var(--primary-color);
 }
 
 .about-hero-media img {
@@ -80,18 +81,21 @@
 
 .value {
 	padding: 1.1rem;
-	background: #fff;
+	background: var(--surface-color);
 	border-radius: 12px;
-	box-shadow: 0 6px 20px rgba(31, 31, 31, 0.04);
+	box-shadow: var(--shadow-sm);
 	display: flex;
 	flex-direction: column;
 	gap: 0.8rem;
 	align-items: flex-start;
 	position: relative;
+	border: 1px solid var(--border-color);
 }
 
 .value:hover {
 	transform: translateY(-6px);
+	box-shadow: var(--shadow-md);
+	border-color: var(--primary-color);
 }
 
 .value-icon {
@@ -102,11 +106,12 @@
 .value h3 {
 	margin: 0;
 	font-size: 1rem;
+	color: var(--text-primary);
 }
 
 .value p {
 	margin: 6px 0 0;
-	color: var(--muted);
+	color: var(--text-secondary);
 	font-size: 0.95rem;
 }
 
@@ -118,26 +123,27 @@
 }
 
 .stat {
-	background: #fff;
+	background: var(--surface-color);
 	padding: 1rem 1.3rem;
 	border-radius: 12px;
 	text-align: center;
-	box-shadow: 0 6px 20px rgba(31, 31, 31, 0.04);
+	box-shadow: var(--shadow-sm);
+	border: 1px solid var(--border-color);
 }
 
 .stat:hover {
-	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-	border: 1px solid var(--accent);
+	box-shadow: var(--shadow-md);
+	border: 1px solid var(--primary-color);
 }
 
 .stat-number {
 	font-weight: 800;
-	color: var(--accent);
+	color: var(--primary-color);
 	font-size: 1.5rem;
 }
 
 .stat-label {
-	color: var(--muted);
+	color: var(--text-secondary);
 	font-size: 0.95rem;
 }
 
@@ -147,9 +153,10 @@
 	gap: 2.5rem;
 	align-items: center;
 	padding: 4rem 6vw;
-	background: var(--surface);
+	background: var(--surface-secondary);
 	border-radius: 2rem;
-	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+	box-shadow: var(--shadow-sm);
+	border: 1px solid var(--border-color);
 }
 
 .team-text h2 {
@@ -160,7 +167,7 @@
 }
 
 .team-text p {
-	color: var(--muted);
+	color: var(--text-secondary);
 	line-height: 1.6;
 	font-size: 1.05rem;
 	margin-bottom: 1.25rem;
@@ -174,7 +181,7 @@
 }
 
 .team-list li strong {
-	color: var(--accent);
+	color: var(--primary-color);
 }
 
 .team-photo img {
@@ -186,7 +193,7 @@
 
 .team-photo img:hover {
 	transform: scale(1.02);
-	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+	box-shadow: var(--shadow-lg);
 }
 
 @media (max-width: 768px) {
@@ -211,8 +218,17 @@
 	padding: 1.3rem;
 	line-height: 40px;
 	border-radius: 12px;
-	background: linear-gradient(90deg, #fff, #fff7f1);
-	border: 1px solid rgba(31, 31, 31, 0.03);
+	background: linear-gradient(90deg, var(--surface-color), var(--surface-secondary));
+	border: 1px solid var(--border-color);
+	box-shadow: var(--shadow-sm);
+}
+
+.about-footer-cta h3 {
+	color: var(--text-primary);
+}
+
+.about-footer-cta p {
+	color: var(--text-secondary);
 }
 
 @media (max-width: 980px) {

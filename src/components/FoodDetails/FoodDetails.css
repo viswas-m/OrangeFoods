@@ -3,11 +3,12 @@
 	flex-wrap: wrap;
 	gap: 3rem;
 	padding: 2rem 8%;
-	background: #fdfdfd;
-	color: #222;
+	background: var(--bg-color);
+	color: var(--text-primary);
 	font-family: "Inter", sans-serif;
 	align-items: flex-start;
 	animation: fadeIn 0.6s ease;
+	transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
 /* Image Section */
@@ -25,7 +26,7 @@
 	border-radius: 24px;
 	object-fit: cover;
 	gap: 0.8rem;
-	box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+	box-shadow: var(--shadow-lg);
 	transition: transform 0.3s;
 }
 
@@ -46,26 +47,26 @@
 .food-content h1 {
 	font-size: 2.4rem;
 	font-weight: 800;
-	color: #1b1b1b;
+	color: var(--text-primary);
 	letter-spacing: -0.5px;
 }
 
 .meta-info {
 	font-size: 0.95rem;
-	color: #666;
+	color: var(--text-secondary);
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
 }
 
 .divider {
-	color: #ccc;
+	color: var(--text-muted);
 }
 
 .food-description {
 	font-size: 1.05rem;
 	line-height: 1.6;
-	color: #444;
+	color: var(--text-secondary);
 	margin-top: 0.5rem;
 }
 
@@ -78,35 +79,36 @@
 
 .tag,
 .food-category {
-	background: #fff3e0;
-	color: #b35400;
+	background: var(--surface-secondary);
+	color: var(--primary-color);
 	padding: 0.3rem 0.8rem;
 	border-radius: 8px;
 	font-size: 0.85rem;
 	font-weight: 600;
+	border: 1px solid var(--border-color);
 }
 
 .food-price {
 	font-size: 1.8rem;
 	font-weight: 800;
-	color: #ff7b00;
+	color: var(--primary-color);
 	margin-top: 0.5rem;
 }
 
 /* Nutrition Section */
 .nutrition {
 	padding: 1.5rem;
-	background: linear-gradient(145deg, #fff7f2, #fff);
+	background: linear-gradient(145deg, var(--surface-secondary), var(--surface-color));
 	border-radius: 1.25rem;
-	box-shadow: 0 4px 12px rgba(255, 94, 0, 0.08);
-	border: 1.5px solid rgba(255, 106, 0, 0.3);
+	box-shadow: var(--shadow-sm);
+	border: 1.5px solid var(--border-color);
 	/* box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); */
 }
 
 .nutrition h3 {
 	font-size: 1.3rem;
 	font-weight: 700;
-	color: #1f1f1f;
+	color: var(--text-primary);
 	margin-bottom: 1.2rem;
 	text-align: center;
 	display: flex;
@@ -133,29 +135,31 @@
 	align-items: center;
 	padding: 1rem;
 	border-radius: 1rem;
-	background: rgba(255, 255, 255, 0.8);
+	background: var(--surface-color);
 	backdrop-filter: blur(6px);
-	box-shadow: 0 2px 8px rgba(255, 165, 0, 0.1);
+	box-shadow: var(--shadow-sm);
 	transition: all 0.3s ease;
 	min-width: 100px;
+	border: 1px solid var(--border-color);
 }
 
 .nutrient:hover {
 	transform: translateY(-4px);
-	background: linear-gradient(145deg, #ffeedb, #fff);
-	box-shadow: 0 6px 16px rgba(255, 102, 0, 0.15);
+	background: linear-gradient(145deg, var(--surface-secondary), var(--surface-color));
+	box-shadow: var(--shadow-md);
+	border-color: var(--primary-color);
 }
 
 .nutrient strong {
 	font-size: 1.4rem;
 	font-weight: 700;
-	color: #ff5e00;
+	color: var(--primary-color);
 	margin-bottom: 6px;
 }
 
 .nutrient span {
 	font-size: 0.9rem;
-	color: #444;
+	color: var(--text-secondary);
 	font-weight: 500;
 	display: flex;
 	align-items: center;
@@ -198,16 +202,21 @@
 /* Preparation Section */
 .preparation {
 	margin-top: 15px;
-	background: linear-gradient(145deg, #ffffff, #ffcfa2);
+	background: linear-gradient(145deg, var(--surface-color), var(--surface-secondary));
 	padding: 1rem 1.5rem;
 	border-radius: 12px;
-	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+	box-shadow: var(--shadow-sm);
+	border: 1px solid var(--border-color);
 }
 
 .preparation h3 {
 	font-size: 1.1rem;
-	color: #e56e00;
+	color: var(--primary-color);
 	margin-bottom: 0.5rem;
+}
+
+.preparation p {
+	color: var(--text-secondary);
 }
 
 .price-and-action {
@@ -229,7 +238,7 @@
 }
 
 .btn.primary {
-	background: linear-gradient(135deg, #ff7b00, #ff9900);
+	background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 	border: none;
 	color: #fff;
 	font-size: 1rem;
@@ -243,22 +252,23 @@
 
 .btn.primary:hover {
 	transform: translateY(-2px);
-	background: linear-gradient(135deg, #ff8f1a, #ffae33);
+	background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
 }
 
 .food-counter {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
-	background: #fff;
+	background: var(--surface-color);
 	padding: 0.6rem 1.2rem;
 	border-radius: 12px;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+	box-shadow: var(--shadow-sm);
+	border: 1px solid var(--border-color);
 }
 
 .counter-btn {
 	border: none;
-	background: #ff7b00;
+	background: var(--primary-color);
 	color: #fff;
 	font-size: 1.2rem;
 	border-radius: 50%;
@@ -266,10 +276,17 @@
 	height: 32px;
 	cursor: pointer;
 	transition: 0.3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .counter-btn:hover {
-	background: #e56e00;
+	background: var(--secondary-color);
+}
+
+.food-counter span {
+	color: var(--text-primary);
 }
 
 /* Loading */
@@ -277,7 +294,7 @@
 	text-align: center;
 	font-size: 1.2rem;
 	padding: 2rem;
-	color: #555;
+	color: var(--text-muted);
 }
 
 .view-cart-btn {
@@ -290,7 +307,7 @@
 	border: none;
 	border-radius: 12px;
 	cursor: pointer;
-	background: linear-gradient(135deg, #ff7a00, #ff3b00);
+	background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 	box-shadow: 0 4px 12px rgba(255, 94, 0, 0.4);
 	backdrop-filter: blur(8px);
 	transition: all 0.3s ease;
@@ -299,7 +316,7 @@
 .view-cart-btn:hover {
 	transform: translateY(-2px) scale(1.03);
 	box-shadow: 0 6px 16px rgba(255, 94, 0, 0.5);
-	background: linear-gradient(135deg, #ff3b00, #ff7a00);
+	background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
 }
 
 /* Responsive */
@@ -335,7 +352,7 @@
 }
 
 .price-strike {
-	color: #888;
+	color: var(--text-muted);
 	text-decoration: line-through;
 	opacity: 0.7;
 	font-weight: 500;

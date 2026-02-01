@@ -1,17 +1,18 @@
 import React, { useState, useContext } from "react";
 import { StoreContext } from "../../context/StoreContext";
 import { AuthContext } from "../../context/AuthContext";
+import { ThemeContext } from "../../context/ThemeContext";
 import { Link, NavLink, useNavigate } from "react-router-dom";
-import { FiMenu, FiX, FiSearch, FiShoppingCart, FiUser, FiLogOut, FiPackage } from "react-icons/fi";
+import { FiMenu, FiX, FiSearch, FiShoppingCart, FiUser, FiLogOut, FiPackage, FiSun, FiMoon } from "react-icons/fi";
 import "./Navbar.css"
 
 const Navbar = ({ setShowLogin }) => {
 	const navigate = useNavigate();
 	const [showMenu, setShowMenu] = useState(false);
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-	const { getCartCount } = useContext(StoreContext);
-	const { setSearchQuery } = useContext(StoreContext);
+	const { getCartCount, setSearchQuery } = useContext(StoreContext);
 	const { isLoggedIn, user, logout } = useContext(AuthContext);
+	const { theme, toggleTheme } = useContext(ThemeContext);
 
 	// Close menu when clicking outside
 	React.useEffect(() => {
@@ -32,7 +33,7 @@ const Navbar = ({ setShowLogin }) => {
 
 			<div className="navbar-search">
 				<FiSearch className="search-icon" />
-				<input type="text" placeholder="Search for dishes or restaurants..." onChange={(e) => setSearchQuery(e.target.value)} />
+				<input type="text" placeholder="Search for dishes..." onChange={(e) => setSearchQuery(e.target.value)} />
 			</div>
 
 			{/* Right Section */}
@@ -48,6 +49,11 @@ const Navbar = ({ setShowLogin }) => {
 						Privacy Policy
 					</NavLink>
 				</div>
+
+				<button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle Theme">
+					{theme === 'light' ? <FiMoon size={22} /> : <FiSun size={22} />}
+				</button>
+
 				<NavLink to="/cart" className="navbar-icon cart-icon">
 					<FiShoppingCart size={22} />
 					{getCartCount() > 0 && <span className="cart-badge">{getCartCount()}</span>}
