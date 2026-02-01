@@ -1,10 +1,26 @@
-# 🍊 Orange Foods — Modern Food Delivery Web App Frontend only
+# 🍊 Orange Foods — Modern Food Delivery Web App Frontend
 
 Orange Foods is a **modern, responsive food delivery web application** built using **React.js**. It offers a sleek and intuitive user experience inspired by leading delivery platforms. The app allows users to browse diverse cuisines, view detailed food information, and manage their cart — all in a **frontend-only implementation** using mock JSON data and services.
 
 ---
 
-> **Note:** The Project builts for only frontend demonstration.
+> **Note:** This project is built for frontend demonstration purposes only.
+
+## ✨ What's New
+
+### 🌓 **Light & Dark Theme System**
+- **Dynamic Theme Switching:** Seamlessly toggle between light and dark modes with a single click.
+- **Persistent Preferences:** Theme choice is saved in `localStorage` and persists across sessions.
+- **CSS Variables Architecture:** All colors, shadows, and spacing use CSS custom properties for instant theme switching.
+- **Comprehensive Coverage:** Every component, page, and UI element is fully theme-aware.
+- **Modern Design:** Dark mode features carefully selected colors for optimal readability and reduced eye strain.
+
+### 🎨 **UI Modernization**
+- **Glassmorphism Effects:** Frosted glass aesthetics on the header slider and various card components.
+- **Enhanced Animations:** Smooth transitions, hover effects, and micro-interactions throughout the app.
+- **Premium Shadows & Borders:** Refined depth and layering using modern shadow techniques.
+- **Improved Typography:** Better font weights, spacing, and responsive sizing using `clamp()`.
+- **Interactive Slider Controls:** Modernized Swiper navigation with glassmorphic buttons and animated pagination dots.
 
 ## 🚀 Features
 
@@ -208,11 +224,13 @@ It features:
 | Category           | Technology                                 |
 | ------------------ | ------------------------------------------ |
 | Frontend Framework | React.js (with Hooks)                      |
-| State Management   | Context API                                |
+| State Management   | Context API (Store, Auth, Theme)           |
 | Data Handling      | Local JSON file via Services               |
-| Styling            | CSS (Modern & Responsive)                  |
+| Styling            | CSS (Modern & Responsive with CSS Variables)|
 | Routing            | React Router                               |
 | UI Design          | Modern, minimal, vibrant with orange theme |
+| Theme System       | Light/Dark mode with localStorage          |
+| Slider/Carousel    | Swiper.js                                  |
 | Build Tool         | Vite                                       |
 
 ---
@@ -220,8 +238,11 @@ It features:
 ## 🧠 Project Highlights
 
 - **No backend required** — built for demonstration of frontend logic and architecture.
+- **Light/Dark Theme System** — fully implemented with CSS variables and persistent user preferences.
+- **Modern UI/UX** — glassmorphism, smooth animations, and premium design elements.
 - **Service + Context pattern** mimics real API data flow.
 - **Scalable UI architecture** that supports easy backend integration (e.g., Node.js, Firebase, etc.).
+- **Responsive Design** — optimized for all screen sizes from mobile to desktop.
 - **Minimal yet powerful** design with focus on visuals and UX.
 - **Easily extendable** — you can add login, orders, payments, and backend API integration.
 
